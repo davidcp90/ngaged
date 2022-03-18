@@ -1,0 +1,15 @@
+.logo {
+  width: 150px;
+  position: relative;
+}
+
+.navigation {
+  width: 100%;
+  padding: 0 16px;
+  box-shadow: rgb(2 1 1 / 10%) 0px 5px 20px -5px;
+}
+.navigationTransparent {
+  width: 100%;
+  padding: 0 16px;
+  height: 80px;
+}

@@ -1,0 +1,7 @@
+.factBg {
+  width: 100%;
+  background: linear-gradient(45deg, #fa222a
+ -10%, #38acfe
+ 40%);
+ color: white !important;
+}
