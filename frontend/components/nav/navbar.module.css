@@ -1,5 +1,6 @@
 .logo {
   width: 150px;
+  height: auto !important;
   position: relative;
 }
 
@@ -12,4 +13,13 @@
   width: 100%;
   padding: 0 16px;
   height: 80px;
+}
+
+.hostLogoContainer {
+  width: 150px; 
+}
+.hostLogo {
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
 }
