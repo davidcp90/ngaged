@@ -1,4 +1,7 @@
 .hostNavbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,6 +11,11 @@
   padding: 16px 8px;
 }
 .hostLogo {
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
+}
+.hostCover {
   width: 100% !important;
   height: auto !important;
   position: relative !important;

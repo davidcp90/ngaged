@@ -32,7 +32,7 @@ const Features = () => {
               </Text>
               <ul>
                 {feature.description.map((desc, index) => {
-                  return <li className={featStyle.listItem}>{desc}</li>;
+                  return <li key={index} className={featStyle.listItem}>- {desc}</li>;
                 })}
               </ul>
             </Grid>

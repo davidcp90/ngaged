@@ -3,12 +3,14 @@ import { Button, Spacer, Text, Grid } from "@nextui-org/react";
 import hcStyles from "./hackathonContent.module.css";
 import HackathonAbout from "./hackathonAbout";
 import HackathonSchedule from "./hackathonSchedule";
+import HackathonRsvp from "./hackathonRsvp";
 import HackathonSubmissions from "./hackathonSubmissions";
 import HackathonTeamFinder from "./hackathonTeamFinder";
 
 const ContentComponents: any = {
   about: <HackathonAbout/>,
   schedule: <HackathonSchedule/>,
+  rsvp: <HackathonRsvp/>,
   submit: <HackathonSubmissions/>,
   find: <HackathonTeamFinder/>
 };
@@ -28,11 +30,8 @@ const HackathonContent = ({ colors }: any) => {
             <Button onClick={() => setContent("schedule")}>
               <b>Schedule</b>
             </Button>
-            <Button onClick={() => setContent("submit")}>
-              <b>Submit your proposal</b>
-            </Button>
-            <Button onClick={() => setContent("find")}>
-              <b>Find a team</b>
+            <Button onClick={() => setContent("rsvp")}>
+              <b>RSVP</b>
             </Button>
           </Button.Group>
         </Grid>

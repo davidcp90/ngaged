@@ -36,6 +36,7 @@
   available: false,
   layout: 'row',
   image: hackathonImg,
-  description: ['Create beautiful pages for your hackathon', 'Let them book', 'Publish all the details (schedule, venue, rules)', 'Collect proposals', 'Vote and esstablish teams'],
+  description: ['Create beautiful pages for your hackathon', 'Let them book', 'Publish all the details (schedule, venue, rules)', 'Collect proposals', 'Vote propossals and form teams'],
 }];
+
 export default featuresHome;

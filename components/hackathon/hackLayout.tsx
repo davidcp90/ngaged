@@ -1,43 +1,26 @@
-import { Button, Spacer, Text, Grid } from "@nextui-org/react";
-import Navbar from "../nav/navbar";
-import Image from "next/image";
-import logoWh from "../../public/images/logo/white.png";
-import teamWork from "../../public/images/home/team-work.gif";
-import { ChevronDown } from "react-iconly";
+import { Grid } from "@nextui-org/react";
 import HackLayoutStyles from "./hackLayout.module.css";
 const HackathonLayout = ({
   children,
   heroImg,
-  hostLogo,
 }: any) => {
   return (
     <div>
       <Grid
         xs={12}
         css={{
-          backgroundImage: `url(${heroImg})`,
-          backgroundSize: "contain",
-          height: "600px",
+          width: "100%",
+          height: "auto",
           position: "relative",
-          backgroundPosition: "left top",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
           padding: "0",
         }}
         direction="column"
       >
-        <nav className={HackLayoutStyles.hostNavbar}>
-          <div className={HackLayoutStyles.hostLogoContainer}>
-            <img
-              className={HackLayoutStyles.hostLogo}
-              src={hostLogo}
-              alt="powered by Ngaged"
-            />
-          </div>
-          <div className={HackLayoutStyles.ngagedLogoContainer}>
-            <Image src={logoWh} alt="Ngaged work" />
-          </div>
-        </nav>
+        <img
+          className={HackLayoutStyles.hostCover}
+          src={heroImg}
+          alt="powered by Ngaged"
+        />
       </Grid>
       <div>{children}</div>
     </div>

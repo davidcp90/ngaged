@@ -4,7 +4,7 @@ import NavbarUser from "./navbarUser";
 import NavbarItems from "./navbarItems";
 import { Grid } from "@nextui-org/react";
 import Image from "next/image";
-const Navbar = ({ transparentBg, hostLogo }: any) => {
+const Navbar = ({ transparentBg, hostLogo, beta }: any) => {
   return (
     <nav
       className={
@@ -38,7 +38,7 @@ const Navbar = ({ transparentBg, hostLogo }: any) => {
           <NavbarItems />
         </Grid>
         <Grid xs={9} md={6}>
-          {!transparentBg ? <NavbarUser /> : null}
+          {!beta ? <NavbarUser /> : null}
         </Grid>
       </Grid.Container>
     </nav>
