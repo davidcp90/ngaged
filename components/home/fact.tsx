@@ -15,8 +15,8 @@ const Fact = () => {
             Ngaged = Profits
           </Text>
           <Text size="2.5em" css={{ textAlign: "center" }} color="#fff">
-            "Your number one customers are your people. Look after your
-            employees and then they will take care of your customers"
+            &quot;Your number one customers are your people. Look after your
+            employees and then they will take care of your customers&quot;
           </Text>
           <Spacer />
           <Spacer />

@@ -48,17 +48,17 @@ const HackathonAbout = () => {
             The MVP should have the following characteristics:
           </Text>
           <ul>
-            <li key="0">- It's targeted to retailers</li>
+            <li key="0">- It is targeted to retailers</li>
             <li key="1">
-              - It's something that solves a real problem. Someone would have
+              - It is something that solves a real problem. Someone would have
               the willing to pay for it
             </li>
             <li key="2">
-              - It's something that have potential to grow in the next year
+              - It is something that have potential to grow in the next year
             </li>
-            <li key="3">- It's easy to understand and use</li>
-            <li key="4">- It's well scoped</li>
-            <li key="5">- It's based on technology</li>
+            <li key="3">- It is easy to understand and use</li>
+            <li key="4">- It is well scoped</li>
+            <li key="5">- It is based on technology</li>
           </ul>
           <Text color="secondary" blockquote>
             <Grid alignItems="center">
