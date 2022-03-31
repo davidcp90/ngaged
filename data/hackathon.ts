@@ -10,8 +10,8 @@ const hackatonData: Array<IHackathon> = [{
     secondary: '#002766',
   },
   details: {
-    startDate: 'April 28',
-    endDate: 'April 30',
+    startDate: 'April 26',
+    endDate: 'April 28',
     location: 'Bogotá, Colombia',
     venue: 'To be confirmed',
     description: 'Our first DIGITAL SUPERPOWERS hackathon is a space in which all Instaleapers would be able to co-create the next genration of digital superpowers for retailers and consumers.'

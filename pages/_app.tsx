@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 
 
 
+
 const theme = createTheme({
   type: "light",
   theme: {
@@ -26,10 +27,10 @@ const theme = createTheme({
 });
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <NextUIProvider theme={theme}>
-  <Component {...pageProps} />
-  </NextUIProvider>
-  )
+      <NextUIProvider theme={theme}>
+        <Component {...pageProps} />
+      </NextUIProvider>
+  );
 }
 
 export default MyApp

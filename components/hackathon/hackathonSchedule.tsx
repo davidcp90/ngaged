@@ -24,7 +24,7 @@ const ScheduleTable = ({rows}: any) => {
     >
       <Table.Header columns={columns}>
         {(column: any) => (
-          <Table.Column minWidth={'100px'} key={column.key}>{column.label}</Table.Column>
+          <Table.Column style={{minWidth: "110px"}} key={column.key}>{column.label}</Table.Column>
         )}
       </Table.Header>
       <Table.Body items={rows}>
@@ -68,6 +68,15 @@ const HackathonSchedule = () => {
             </Grid>
             <Spacer />
           </Grid>
+        </Grid>
+        <Spacer />
+        <Spacer />
+        <Grid xs={12} alignItems="center" justify="center">
+          <img
+            width="300"
+            src="https://s3.tebi.io/ngaged/hackathon/Stickers-02.png"
+            alt="stickers"
+          />
         </Grid>
       </Grid.Container>
     </>

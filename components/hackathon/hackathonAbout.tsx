@@ -71,6 +71,15 @@ const HackathonAbout = () => {
               </span>
             </Grid>
           </Text>
+          <Spacer />
+          <Spacer />
+          <Grid xs={12} alignItems="center" justify="center">
+            <img
+              width="300"
+              src="https://s3.tebi.io/ngaged/hackathon/Stickers-04.png"
+              alt="stickers"
+            />
+          </Grid>
         </Grid>
       </Grid.Container>
     </>
