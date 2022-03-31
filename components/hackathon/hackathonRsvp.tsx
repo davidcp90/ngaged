@@ -67,8 +67,8 @@ const HackathonRsvp = () => {
     (name !== "" && email !== "" && host !== "" && hostAddress !== "");
   return !saved ? (
     <>
-      <Grid.Container gap={2}>
-        <Grid xs={12} direction="column">
+      <Grid.Container gap={2} justify="center">
+        <Grid xs={10} sm={8} md={6} direction="column" justify="center">
           <Text h2 css={{ textAlign: "center" }}>
             RSVP
           </Text>
@@ -209,7 +209,9 @@ const HackathonRsvp = () => {
         </Grid>
       </Grid.Container>
     </>
-  ) : (<HackathonConfirmed name={name} />);
+  ) : (
+    <HackathonConfirmed name={name} />
+  );
 };
 
 export default HackathonRsvp;
