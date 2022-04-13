@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { createTheme, NextUIProvider } from "@nextui-org/react"
 import type { AppProps } from 'next/app'
-
+import { UserProvider } from "@auth0/nextjs-auth0";
 
 
 
@@ -27,9 +27,11 @@ const theme = createTheme({
 });
 function MyApp({ Component, pageProps }: AppProps) {
   return (
+    <UserProvider>
       <NextUIProvider theme={theme}>
         <Component {...pageProps} />
       </NextUIProvider>
+    </UserProvider>
   );
 }
 

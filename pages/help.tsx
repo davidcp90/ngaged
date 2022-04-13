@@ -1,9 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import PublicLayout from '../components/layout/publicLayout';
-import HomeHero from '../components/home/hero';
-import Fact from '../components/home/fact';
-import Features from '../components/home/features';
 const Home: NextPage = () => {
   return (
     <PublicLayout beta={false}>
@@ -15,11 +12,19 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomeHero />
-      <Fact />
-      <Features />
+      <iframe
+        src="https://tally.so/embed/w7QVZm?alignLeft=1&hideTitle=1&transparentBackground=1"
+        width="100%"
+        height="600"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Ngaged Help"
+      ></iframe>
     </PublicLayout>
   );
 }
 
 export default Home
+
+

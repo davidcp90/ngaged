@@ -1,32 +1,47 @@
+import { useUser } from "@auth0/nextjs-auth0";
+import NavbarLogin from "./navbarLogin";
+import { Grid, User, Tooltip, Col, Row, Button } from "@nextui-org/react";
+import { userPicture } from "../../lib/userPicture.lib";
+import { Logout } from "react-iconly";
 
-import { Button, Grid } from "@nextui-org/react";
-
-const NavbarUser = ({transparentBg}: any) => {
+const NavBarUserMenu = () => {
   return (
+    <Col>
+      <Row>
+        <a href="/api/auth/logout">
+          <Button light color="primary" auto>
+            <Logout set="bulk" />
+            Log-out
+          </Button>
+        </a>
+      </Row>
+    </Col>
+  );
+}
+
+const NavbarUser = () => {
+  const { user }: any = useUser();
+  const picture = userPicture(user);
+  return user ? (
     <Grid.Container alignItems="center" justify="flex-end" gap={2}>
-      <Grid>
-        <Button
-          color="primary"
-          size="sm"
-          auto
-        >
-          Login
-        </Button>
-      </Grid>
-      <Grid>
-        <Button
-          css={{
-            border: transparentBg ? "2px solid white" : "none",
-          }}
+      <Tooltip
+        placement="bottomEnd"
+        trigger="click"
+        content={<NavBarUserMenu />}
+      >
+        <User
+          src={picture}
+          name={user.nickname}
+          bordered
+          zoomed
+          pointer={true}
           color="gradient"
-          light={transparentBg}
-          size="xl"
-          auto
-        >
-          Sign-up
-        </Button>
-      </Grid>
+        />
+      </Tooltip>
     </Grid.Container>
+  ) : (
+    <NavbarLogin />
   );
 };
+
 export default NavbarUser;

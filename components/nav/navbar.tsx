@@ -38,10 +38,11 @@ const Navbar = ({ transparentBg, hostLogo, beta }: any) => {
           <NavbarItems />
         </Grid>
         <Grid xs={9} md={6}>
-          {!beta ? <NavbarUser /> : null}
+          {beta ? <NavbarUser /> : null}
         </Grid>
       </Grid.Container>
     </nav>
   );
 };
+
 export default Navbar;
