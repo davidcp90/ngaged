@@ -16,9 +16,9 @@ const Home: NextPage = () => {
         src="https://tally.so/embed/w7QVZm?alignLeft=1&hideTitle=1&transparentBackground=1"
         width="100%"
         height="600"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
         title="Ngaged Help"
       ></iframe>
     </PublicLayout>
