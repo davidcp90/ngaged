@@ -30,11 +30,11 @@ const HackathonContent = ({ colors }: any) => {
             <Button onClick={() => setContent("schedule")}>
               <b>Schedule</b>
             </Button>
-            <Button onClick={() => setContent("rsvp")}>
-              <b>RSVP</b>
-            </Button>
             <Button onClick={() => setContent("submit")}>
               <b>Submit your idea</b>
+            </Button>
+            <Button onClick={() => setContent("find")}>
+              <b>Join a team</b>
             </Button>
           </Button.Group>
         </Grid>
